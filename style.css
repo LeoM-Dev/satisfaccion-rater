@@ -72,6 +72,20 @@ input[type="range"] {
     
 }
 
+.request {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+i {
+    margin-right: 0.5rem;
+    font-size: 1.4rem;
+    font-style: normal;
+}
+
 button {
     background-color: #4345d4;
     color: white;
