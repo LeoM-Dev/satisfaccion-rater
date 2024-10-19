@@ -34,7 +34,7 @@ form.addEventListener('submit', function(e) {
     const rating2 = document.getElementById('rating2').value;
     const rating3 = document.getElementById('rating3').value;
 
-    const mailtoLink = `mailto:leomeza152463@gmail.com?subject=Reseña%20de%20${name}&body=
+    const mailtoLink = `mailto:hilarygomezrodriguez836@gmail.com?subject=Reseña%20de%20${name}&body=
     Nombre: ${name}%0D%0A
     Atención al cliente: ${rating1}%0D%0A
     Rapidez en el servicio: ${rating2}%0D%0A
