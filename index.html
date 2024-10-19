@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidor de Satisfacción</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Medidor de Satisfacción</h1>
+        <p id="welcome">Bienvenido al medidor de satisfacción. Aquí podrás evaluar tu experiencia con nuestro servicio de BPO. Completa el formulario calificando distintos aspectos de nuestro servicio y deja una reseña opcional para ayudarnos a mejorar. ¡Tu opinión es muy importante para nosotros!</p>
+        <form id="satisfactionForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <div class="question">
+                <p>1. ¿Cómo calificaría la atención al cliente?</p>
+                <input type="range" min="1" max="5" value="3" class="slider" id="rating1">
+                <span id="feedback1" class="feedback">Satisfecho</span>
+            </div>
+
+            <div class="question">
+                <p>2. ¿Cómo calificaría la rapidez en el servicio?</p>
+                <input type="range" min="1" max="5" value="3" class="slider" id="rating2">
+                <span id="feedback2" class="feedback">Satisfecho</span>
+            </div>
+
+            <div class="question">
+                <p>3. ¿Qué tan satisfecho está con el precio?</p>
+                <input type="range" min="1" max="5" value="3" class="slider" id="rating3">
+                <span id="feedback3" class="feedback">Satisfecho</span>
+            </div>
+
+            <label for="review">Reseña (opcional):</label>
+            <textarea id="review" name="review" rows="4"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
