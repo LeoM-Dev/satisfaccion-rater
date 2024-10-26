@@ -2,8 +2,39 @@ const form = document.getElementById('satisfactionForm');
 const ratings = [
     { id: 'rating1', feedbackId: 'feedback1', reactionId: 'reaction1' },
     { id: 'rating2', feedbackId: 'feedback2', reactionId: 'reaction2' },
-    { id: 'rating3', feedbackId: 'feedback3', reactionId: 'reaction3' }
+    { id: 'rating3', feedbackId: 'feedback3', reactionId: 'reaction3' },
+    { id: 'rating4', feedbackId: 'feedback4', reactionId: 'reaction4' },
+    { id: 'rating5', feedbackId: 'feedback5', reactionId: 'reaction5' },
+    { id: 'rating6', feedbackId: 'feedback6', reactionId: 'reaction6' },
+    { id: 'rating7', feedbackId: 'feedback7', reactionId: 'reaction7' },
 ];
+
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const review = document.getElementById('review').value;
+    let ratingValues = '';
+
+    ratings.forEach(rating => {
+        const slider = document.getElementById(rating.id);
+        const feedback = document.getElementById(rating.feedbackId);
+        ratingValues += `${feedback.textContent}: ${slider.value}/5`;
+    });
+
+    const body = `
+    Nombre: ${name}
+
+    Calificaciones:
+    ${ratingValues}
+    Reseña: ${review}
+    `;
+
+    const mailtoLink = `mailto:leomeza152463@gmail.com?subject=Nueva Evaluación de Satisfacción&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailtoLink;
+});
+
 
 ratings.forEach(rating => {
     const slider = document.getElementById(rating.id);
@@ -19,7 +50,7 @@ ratings.forEach(rating => {
 
         switch(value) {
             case '1': 
-                feedbackText = 'Malo'; 
+                feedbackText = 'Nada Satisfecho'; 
                 reactionEmoji = '&#128532';
                 feedbackColor = '#FDFFFC';
                 feedbackBackgroundColor = '#D62839';
