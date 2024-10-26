@@ -49,6 +49,15 @@ nav a {
     border-bottom: 2px solid #232323;
 }
 
+#jna {
+  width: 80px;
+  height: 80px;
+}
+
+#ub {
+  width: 150px;
+  height: 80px;
+}
 .container {
     background-color: #ffffff;
     margin: 32px;
@@ -194,4 +203,3 @@ i {
       max-width: 100%;
     }
   }
-  
