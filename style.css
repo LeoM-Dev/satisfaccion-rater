@@ -186,6 +186,7 @@ i {
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    gap: 1rem;
   }
   
   @media (max-width: 480px) {
