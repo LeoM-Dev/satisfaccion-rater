@@ -9,8 +9,15 @@
 </head>
 <body>
     <div class="container">
-        <h1>Medidor de Satisfacción</h1>
-        <p id="welcome">Bienvenido al medidor de satisfacción. Aquí podrás evaluar tu experiencia con nuestro servicio de BPO. Completa el formulario calificando distintos aspectos de nuestro servicio y deja una reseña opcional para ayudarnos a mejorar. ¡Tu opinión es muy importante para nosotros!</p>
+        <nav>
+            <img src="ub.png" alt="UB">
+            
+            <img src="jna.jpeg" alt="JNA">
+        </nav>
+        <header>
+            <h1>Medidor de Satisfacción</h1>
+            <p id="welcome">Bienvenido al medidor de satisfacción. Aquí podrás evaluar tu experiencia con nuestro servicio de BPO. Completa el formulario calificando distintos aspectos de nuestro servicio y deja una reseña opcional para ayudarnos a mejorar. ¡Tu opinión es muy importante para nosotros!</p>
+        </header>
         <form id="satisfactionForm">
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" required>
@@ -42,14 +49,74 @@
                 </div>
             </div>
 
+            <div class="question">
+                <p>4. ¿Cómo calificaría la calidad general del servicio?</p>
+                <input type="range" min="1" max="5" value="3" class="slider" id="rating4">
+                <div class="request">
+                    <span id="feedback4" class="feedback">Satisfecho</span>
+                    <i class="reaction" id="reaction4">&#128512</i>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>5. ¿Qué tan probable es que recomiende nuestro servicio a otros?</p>
+                <input type="range" min="1" max="5" value="3" class="slider" id="rating5">
+                <div class="request">
+                    <span id="feedback5" class="feedback">Satisfecho</span>
+                    <i class="reaction" id="reaction5">&#128512</i>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>6. ¿Cómo calificaría la comunicación durante el proceso de servicio?</p>
+                <input type="range" min="1" max="5" value="3" class="slider" id="rating6">
+                <div class="request">
+                    <span id="feedback6" class="feedback">Satisfecho</span>
+                    <i class="reaction" id="reaction6">&#128512</i>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>7. ¿Qué tan satisfecho está con la resolución de problemas o inquietudes?</p>
+                <input type="range" min="1" max="5" value="3" class="slider" id="rating7">
+                <div class="request">
+                    <span id="feedback7" class="feedback">Satisfecho</span>
+                    <i class="reaction" id="reaction7">&#128512</i>
+                </div>
+            </div>
+
             <label for="review">Reseña (opcional):</label>
             <textarea id="review" name="review" rows="4"></textarea>
 
-            <button type="submit">Enviar</button>
             
-        </form>
-    </div>
+            <button type="submit" class="button x">
+                Enviar
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#f7f6f4">
+                    <path d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z"/>
+                </svg>
+            </button>
+
+            <footer>
+                <p>Gracias por tu tiempo y tu opinión. <br> ¡Que tengas un excelente día!</p>
+
+                <div class="integrantes">
+                    <h5>
+                        Hilary Peña
+                    </h5>
+                    <h5>
+                        Luciana Bermudez
+                    </h5>
+                    <h5>
+                        Kathleen Manjarrez
+                    </h5>
+                </div>
+
+            </footer>
+            
+            </form>
+        </div>
 
     <script src="main.js"></script>
 </body>
 </html>
+
