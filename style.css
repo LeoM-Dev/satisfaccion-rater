@@ -31,7 +31,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #fffafac4;
+  background-color: #fffafa;
   margin: 32px;
   padding: 2rem;
   border-radius: 10px;
@@ -43,7 +43,6 @@ body {
 
 .advise h1 {
   color: #fc1010;
-  text-shadow: red 0px 0px 3px;
   font-weight: 700;
   font-size: 2rem;
   text-align: center;
@@ -53,7 +52,7 @@ body {
   margin-bottom: 1rem;
   font-weight: 400;
   color: #333;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 
