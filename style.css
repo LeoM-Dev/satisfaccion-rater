@@ -26,6 +26,61 @@ body {
     background-size: var(--s) calc(var(--s) * 0.577);
 }
 
+.advise {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fffafac4;
+  margin: 32px;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.advise h1 {
+  color: #fc1010;
+  text-shadow: red 0px 0px 3px;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.advise p {
+  margin-bottom: 1rem;
+  font-weight: 400;
+  color: #333;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.nequi {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.nequi img {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5rem;
+}
+
+.nequi span {
+  font-weight: 800;
+  color: #333;
+  font-size: 1.5rem;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -67,6 +122,7 @@ nav a {
     max-width: 400px;
     width: 100%;
     text-align: center;
+    display: none;
 }
 
 h1 {
