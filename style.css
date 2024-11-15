@@ -27,7 +27,7 @@ body {
 }
 
 .advise {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -121,7 +121,7 @@ nav a {
     max-width: 400px;
     width: 100%;
     text-align: center;
-    display: none;
+    display: flex;
 }
 
 h1 {
